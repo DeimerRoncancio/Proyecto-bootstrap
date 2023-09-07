@@ -1,0 +1,152 @@
+body {
+  height: calc(100vh - 56px); }
+
+/*Header*/
+.jumbotron {
+  background-image: url("../dist-images/img-jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 56px; }
+
+.head {
+  width: 100%;
+  background-color: rgba(84, 84, 84, 0.5);
+  color: #fff;
+  padding: 70px; }
+
+/*Breadcrumb*/
+.breadcrumb {
+  margin-left: 35px; }
+
+/*Caracteristicas*/
+.card-collapse .collapse {
+  height: 266.92px; }
+
+.caracteristica {
+  height: 100%; }
+
+/*Carrusel*/
+.carousel-container-styles {
+  margin: 15px; }
+
+.carousel-body-styles {
+  border-radius: 15px;
+  transition: all 0.5s;
+  box-shadow: 0 0 15px 5px #bebebe; }
+
+.carousel-container-styles:hover .carousel-body-styles {
+  box-shadow: 0 0 15px 5px #929292; }
+
+.item-carousel-styles {
+  background-image: url("../dist-images/hotel-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px; }
+
+.bg-img-2 {
+  background-image: url("../dist-images/hotel-2.jpg"); }
+
+.bg-img-3 {
+  background-image: url("../dist-images/hotel-3.jpg"); }
+
+.container-content-styles {
+  background-color: rgba(148, 148, 148, 0.349); }
+
+/*Tarjetas de hoteles*/
+.btn-hotel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 100%;
+  border-radius: 0 0 5px 5px; }
+
+.bg-btn-hotel {
+  background-color: #212529; }
+
+.card-hotel {
+  flex: 1 250px;
+  margin: 15px;
+  box-shadow: 0px 0px 15px #cecece; }
+
+.img-hotel {
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 150px;
+  z-index: 0; }
+
+.img-hotel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s; }
+
+.card-hotel:hover .img-hotel img {
+  transform: scale(1.1); }
+
+/*Contacto*/
+.container-form {
+  border-radius: 50px;
+  padding-top: 40px;
+  padding-left: 15%;
+  padding-right: 15%; }
+
+/*Footer*/
+footer {
+  background-color: #202529e5;
+  margin-top: 120px;
+  color: aliceblue; }
+
+.row {
+  margin-left: 0px; }
+
+.footer {
+  width: 100%; }
+
+.item-footer {
+  margin-bottom: 5px; }
+
+.col-sm-4 a {
+  text-decoration: none;
+  color: aliceblue; }
+
+.col-sm-4 a:hover {
+  text-decoration: underline; }
+
+/*Iconos*/
+.icon-footer {
+  margin-right: 17px; }
+
+.icon-card {
+  margin-right: 17px;
+  font-size: 20px; }
+
+.icon-ubi {
+  margin-right: 12px;
+  font-size: 14px; }
+
+.more-info-icon {
+  margin-left: 12px;
+  font-size: 10px;
+  width: 18px;
+  color: rgba(54, 61, 68, 0.898);
+  border: 1px solid rgba(54, 61, 68, 0.898);
+  justify-content: center;
+  display: flex;
+  padding: 3px;
+  height: fit-content;
+  border-radius: 15px; }
+
+.icon-table {
+  font-size: 6px;
+  margin-left: 8px;
+  color: #fff;
+  border-color: #fff;
+  width: 16px;
+  height: 16px; }
+
+.icon-table:hover {
+  cursor: pointer; }

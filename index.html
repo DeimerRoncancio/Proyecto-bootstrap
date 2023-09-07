@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- build:css dist/index.css -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.css"/>
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- endbuild -->
+        <title>Proyecto Coursera - Universidad Austral</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Hoteles</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="precios.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Terminos y condiciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contactenos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="head">
+                <h1>Hoteles de la ciudad</h1>
+                <h5>Los mejores hoteles de la ciudad.</h5>
+            </div>
+        </div>
+
+        <nav class="breadcrumb mt-2">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+            </ol>
+        </nav>
+        
+        <div class="container main">
+            <div class="d-flex flex-wrap p-5">
+                <div class="col-sm-4 p-3 card-collapse">
+                    <div>
+                        <button class="btn btn-primary mb-2 w-100" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#comodidad" aria-expanded="false" aria-controls="comodidad">
+                            Comodidad
+                        </button>
+                    </div> 
+                    <div class="collapse" id="comodidad">
+                        <div class="caracteristica p-3 card">
+                            <h2>Comodidad</h2>
+                            <p>
+                                Amplias habitaciones y servicios 
+                                modernos se combinan para brindar un ambiente acogedor 
+                                que te hace sentir como en casa desde el momento en que entras.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-3 card-collapse">
+                    <div>
+                        <button class="btn btn-primary mb-2 w-100" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#calidad" aria-expanded="false" aria-controls="calidad">
+                            Calidad
+                        </button>
+                    </div> 
+                    <div class="collapse" id="calidad">
+                        <div class="caracteristica p-3 card">
+                            <h2>Calidad</h2>
+                            <p>
+                                Exquisita artesanía y atención al detalle en cada rincón. 
+                                Materiales de primera calidad y acabados impecables que 
+                                reflejan un compromiso inquebrantable con la excelencia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-3 card-collapse">
+                    <div>
+                        <button class="btn btn-primary mb-2 w-100" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#ubicacion" aria-expanded="false" aria-controls="ubicacion">
+                            Ubicación
+                        </button>
+                    </div> 
+                    <div class="collapse" id="ubicacion">
+                        <div class="caracteristica p-3 card">
+                            <h2>Ubicación</h2>
+                            <p>
+                                Estratégicamente ubicados, nuestros 
+                                espacios ofrecen fácil acceso a los principales lugares de 
+                                interés, restaurantes de renombre y opciones de transporte, 
+                                asegurando una experiencia enriquecedora y conveniente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="carrusel" class="carousel slide carousel-container-styles" data-bs-ride="carousel">
+                <div class="carousel-inner carousel-body-styles">
+                    <div class="carousel-item item-carousel-styles active" data-bs-interval="3000">
+                        <div class="d-flex justify-content-center align-items-center h-100 container-content-styles">
+                            <h2>Hotel Villavicencio</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item item-carousel-styles bg-img-2" data-bs-interval="3000">
+                        <div class="d-flex justify-content-center align-items-center h-100 container-content-styles">
+                            <h2>Hotel Gran Via</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item item-carousel-styles bg-img-3" data-bs-interval="3000">
+                        <div class="d-flex justify-content-center align-items-center h-100 container-content-styles">
+                            <h2>Hotel Kasandra</h2>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="d-flex flex-wrap">
+                <div class="card card-hotel d-flex justify-content-between">
+                    <div>
+                        <div class="img-hotel">
+                            <img src="./dist-images/hotel-1.jpg">
+                        </div>
+                        <div class="card-header">
+                            <h6 class="card-subtitle text-muted">
+                                <span class="oi oi-map-marker icon-ubi"></span>Villavicencio
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <h2 class="card-title">Hotel Villavicencio</h2>
+                                <span class="oi oi-info more-info-icon" data-bs-toggle="tooltip" title='Para reservar en este hotel, haz click en el boton "Reservar"'></span>
+                            </div>
+                            <p class="card-text">
+                                El mejor hotel de la ciudad, calificado con cinco estrellas.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-lg btn-hotel bg-btn-hotel" id="hotels-modal-btn" data-bs-target="#modal-hotels" 
+                        data-bs-toggle="modal" type="button">
+                            <span class="oi oi-caret-bottom icon-card"></span>Reservar
+                        </button>
+                    </div>
+                </div>
+                <div class="card card-hotel d-flex justify-content-between">
+                    <div>
+                        <div class="img-hotel">
+                            <img src="./dist-images/hotel-2.jpg">
+                        </div>
+                        <div class="card-header">
+                            <h6 class="card-subtitle text-muted">
+                                <span class="oi oi-map-marker icon-ubi"></span>Bogota
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <h2 class="card-title">Hotel gran vía</h2>
+                                <span class="oi oi-info more-info-icon" data-bs-toggle="tooltip" title='Para reservar en este hotel, haz click en el boton "Reservar"'></span>
+                            </div>
+                            <p class="card-text">
+                                El hotel con la mejor ubicación. Goza de todo tipo de servicios a tu alrededor.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-lg btn-hotel bg-btn-hotel" id="hotels-modal-btn" data-bs-target="#modal-hotels" 
+                        data-bs-toggle="modal" type="button">
+                            <span class="oi oi-caret-bottom icon-card"></span>Reservar
+                        </button>
+                    </div>
+                </div>
+                <div class="card card-hotel d-flex justify-content-between">
+                    <div>
+                        <div class="img-hotel">
+                            <img src="./dist-images/hotel-3.jpg">
+                        </div>
+                        <div class="card-header">
+                            <h6 class="card-subtitle text-muted">
+                                <span class="oi oi-map-marker icon-ubi"></span>Barranquilla
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <h2 class="card-title">Hotel Kasandra</h2>
+                                <span class="oi oi-info more-info-icon" data-bs-toggle="tooltip" title='Para reservar en este hotel, haz click en el boton "Reservar"'></span>
+                            </div>
+                            <p class="card-text">
+                                Goza de una ubicación envidiable, con centros comerciales, 
+                                sitios turisticos y transporte a la vuelta de la esquina.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-lg btn-hotel bg-btn-hotel" id="hotels-modal-btn" data-bs-target="#modal-hotels" 
+                        data-bs-toggle="modal" type="button">
+                            <span class="oi oi-caret-bottom icon-card"></span>Reservar
+                        </button>
+                    </div>
+                </div>
+                <div class="card card-hotel d-flex justify-content-between">
+                    <div>
+                        <div class="img-hotel">
+                            <img src="./dist-images/hotel-4.jpeg">
+                        </div>
+                        <div class="card-header">
+                            <h6 class="card-subtitle text-muted">
+                                <span class="oi oi-map-marker icon-ubi"></span>Medellin
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <h2 class="card-title">Hotel Polar</h2>
+                                <span class="oi oi-info more-info-icon" data-bs-toggle="tooltip" title='Para reservar en este hotel, haz click en el boton "Reservar"'></span>
+                            </div>
+                            <p class="card-text">
+                                Goza de una ubicación envidiable, con centros comerciales, 
+                                sitios turisticos y transporte a la vuelta de la esquina.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-lg btn-hotel bg-btn-hotel" id="hotels-modal-btn" data-bs-target="#modal-hotels" 
+                        data-bs-toggle="modal" type="button">
+                            <span class="oi oi-caret-bottom icon-card"></span>Reservar
+                        </button>
+                    </div>
+                </div>
+                <div class="card card-hotel d-flex justify-content-between">
+                    <div>
+                        <div class="img-hotel">
+                            <img src="./dist-images/hotel-5.jpg">
+                        </div>
+                        <div class="card-header">
+                            <h6 class="card-subtitle text-muted">
+                                <span class="oi oi-map-marker icon-ubi"></span>Bogota
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <h2 class="card-title">Hotel Torre-B</h2>
+                                <span class="oi oi-info more-info-icon" data-bs-toggle="tooltip" title='Para reservar en este hotel, haz click en el boton "Reservar"'></span>
+                            </div>
+                            <p class="card-text">
+                                Goza de una ubicación envidiable, con centros comerciales, 
+                                sitios turisticos y transporte a la vuelta de la esquina.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-lg btn-hotel bg-btn-hotel" id="hotels-modal-btn" data-bs-target="#modal-hotels" 
+                        data-bs-toggle="modal" type="button">
+                            <span class="oi oi-caret-bottom icon-card"></span>Reservar
+                        </button>
+                    </div>
+                </div>
+                <div class="card card-hotel d-flex justify-content-between">
+                    <div>
+                        <div class="img-hotel">
+                            <img src="./dist-images/hotel-6.webp">
+                        </div>
+                        <div class="card-header">
+                            <h6 class="card-subtitle text-muted">
+                                <span class="oi oi-map-marker icon-ubi"></span>Villavicencio
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <h2 class="card-title">Hotel Villa Maria</h2>
+                                <span class="oi oi-info more-info-icon" data-bs-toggle="tooltip" title='Para reservar en este hotel, haz click en el boton "Reservar"'></span>
+                            </div>
+                            <p class="card-text">
+                                Goza de una ubicación envidiable, con centros comerciales, 
+                                sitios turisticos y transporte a la vuelta de la esquina.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-lg btn-hotel bg-btn-hotel" id="hotels-modal-btn" data-bs-target="#modal-hotels" 
+                        data-bs-toggle="modal" type="button">
+                            <span class="oi oi-caret-bottom icon-card"></span>Reservar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-hotels" tabindex="-1" aria-labelledby="modal-of-hotels" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal-of-hotels">Hoteles</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input type="text" class="form-control" id="email" />
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" for="nombres">Nombres y apellidos</label>
+                                    <input class="form-control" type="text" id="nombres" />
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" for="comentario">Comentario</label>
+                                    <textarea class="form-control" id="comentario"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Reservar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer p-4 row">
+                <div class="col-sm-4 d-flex flex-column">
+                    <h6 class="item-footer">Nuestras redes sociales</h6>
+                    <a class="item-footer" href="https://www.facebook.com">Facebook</a>
+                    <a class="item-footer" href="https://www.youtube.com">Youtube</a>
+                    <a class="item-footer" href="https://twitter.com">Twitter</a>
+                </div>
+                <div class="col-sm-4 d-flex flex-column align-items-center">
+                    <address>
+                        <h4>Nuestas oficinas</h4>
+                        <p><span class="oi oi-phone icon-footer"></span>+57316498621</p>
+                        <p><span class="oi oi-home icon-footer"></span>Cll 4, cr 15, barrio La Moral</p>
+                        <p><span class="oi oi-envelope-closed icon-footer"></span>hoteles@gmail.com</p> 
+                    </address>
+                </div>
+                <div class="col-sm-4 d-flex flex-column align-items-end">
+                    <a class="item-footer" href="https://www.facebook.com">Sobre nosotros</a>
+                    <a class="item-footer" href="https://www.youtube.com">Terminos y condicones</a>
+                    <a class="item-footer" href="https://twitter.com">Contactenos</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- build:js dist/index.js -->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Activación de tooltips
+            $(function(){
+                 $("[data-bs-toggle='tooltip']").tooltip();
+            });
+
+            // Cambio de color y desactivación de boton "reservar" (no funciona en Jquery)
+
+            const boton = document.querySelectorAll("#hotels-modal-btn");
+
+            boton.forEach((item_boton)=> {
+                item_boton.addEventListener("click",(event)=>{
+                    item_boton.classList.remove("bg-btn-hotel");
+                    item_boton.disabled = !item_boton.disabled;
+                });
+            });
+        </script>
+        <!-- endbuild -->
+    </body>
+</html>
